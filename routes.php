@@ -2,12 +2,24 @@
 
 Route::controller('home');
 
+Route::any('phpmyadmin', 'home@phpmyadmin');
+
 /* Sends any request to invite to  the correct invite controller */
 Route::any('invite', 'invite@invite');
 
-Route::any('confirm', 'invite@confirminvite');
+Route::any('reserve/username/confirm', 'invite@confirminvite');
 
-Route::any('email', 'invite@htmlEmail');
+Route::any('reserve/confirm/email', 'invite@htmlEmail');
+
+Route::any('posts/from/all', 'post@viewAll');
+Route::any('post/view', 'post@pullPost');
+
+//User routes
+Route::any('user/settings', 'user@accountSettings');
+Route::any('user/inbox', 'user@inbox');
+Route::any('user/notifications', 'user@notifications');
+
+
 
 /*
 |--------------------------------------------------------------------------
