@@ -6,6 +6,8 @@
 	<meta name="description" content="Look around at the various posts people have created.">
 	<meta name="keywords" content="posts, lovebyte">
 	<?php echo HTML::style('laravel/css/invitestyle.css'); ?>
+	<?php //echo Asset::container('bootstrapper')->styles(); ?>
+	<?php //echo Asset::container('bootstrapper')->scripts(); ?>
 	<link rel="shortcut icon" href="images/favi.ico" type="image/x-icon">
 
 	<title>LoveByte Invite Page</title>

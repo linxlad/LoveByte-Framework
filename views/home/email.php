@@ -386,7 +386,8 @@
                                             <td class="headerContent">
                                             
                                             	<!-- // Begin Module: Standard Header Image \\ -->
-                                            	<img src="../img/header.jpg" style="max-width:600px;" id="headerImage campaign-icon" mc:label="header_image" mc:edit="header_image" mc:allowdesigner mc:allowtext />
+                                                <?php echo HTML::image('laravel/img/header.jpg', '', array('id' => 'headerImage campaign-icon', 'style' => 'max-width:600px')); ?>	
+                                            	<!--<img src="../img/header.jpg" style="max-width:600px;" id="headerImage campaign-icon" mc:label="header_image" mc:edit="header_image" mc:allowdesigner mc:allowtext />-->
                                             	<!-- // End Module: Standard Header Image \\ -->
                                             
                                             </td>
@@ -446,7 +447,8 @@
                                                     <tr>
                                                         <td colspan="2" valign="middle" id="utility">
                                                             <div mc:edit="std_utility">
-                                                                <img src="../img/footer.jpg" style="max-width:600px;" id="headerImage campaign-icon" mc:label="header_image" mc:edit="header_image" mc:allowdesigner mc:allowtext />
+                                                                <?php echo HTML::image('laravel/img/footer.jpg', '', array('id' => 'headerImage campaign-icon', 'style' => 'max-width:600px')); ?>
+                                                                <!--<img src="../img/footer.jpg" style="max-width:600px;" id="headerImage campaign-icon" mc:label="header_image" mc:edit="header_image" mc:allowdesigner mc:allowtext />-->
                                                             </div>
                                                         </td>
                                                     </tr>

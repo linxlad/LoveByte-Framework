@@ -26,7 +26,7 @@ class Invite_Controller extends Base_Controller {
 		{
 			//Passed validation connect to database
 			if(invite::dbconnect())
-			{	
+			{
 				//insert invite into temp table
 				if($id = invite::dbinsert($table, $input))
 				{
@@ -43,7 +43,7 @@ class Invite_Controller extends Base_Controller {
 					//Render new invite with success message			"Success, check your email"
 					return View::make('invite.index')->with('validation', "Success, check your email");
 										
-				}			
+				}	
 				
 			}
 		}

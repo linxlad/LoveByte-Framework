@@ -23,9 +23,9 @@ class mailer
 					$mail->subject('Invite Request Received');
 					$mail->body("<h4>Just one more step to reserve your invite</h4>
 
-					<h4>Please click the link below to confirm your email address.</h4>
+					Please click the link below to confirm your email address. <br />
 					
-					http://lovebyte.co.uk/public/index.php/confirm?".$newKey."<br /><br />");
+					http://lovebyte.co.uk/reserve/username/confirm?".$newKey."<br /><br />");
 					
 					// Send the email
 					$result = $mail->send();
@@ -40,9 +40,9 @@ class mailer
 	}
 
 	/**
-     * Sends confirmation HTML email using the SMTP class.
+     * Sends confirmation HTML email using the SMTP class. 
  	 *
- 	 * @param  string  $username
+ 	 * @param  string  $username 
 	 * @param  string  $newKey
 	 * @param  string  $email
  	 * @return string 
@@ -75,7 +75,7 @@ class mailer
 					encorperate a code angle but not very successfully. And so LoveByte was born.<br /><br />
 
 					View the HTML version of this email? Click the link below<br />
-					http://lovebyte.co.uk/public/index.php/email?".$newKey."");
+					http://lovebyte.co.uk/reserve/confirm/email?".$newKey."");
 					
 					// Send the email
 					$result = $mail->send();
